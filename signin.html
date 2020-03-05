@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+    <style>
+
+        font-face {
+            font-family: Shabnam;
+            src: url('Shabnam.ttf') format('truetype');
+            font-weight: normal;
+        }
+
+        *{
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        body{
+            margin:0;
+            width:100vw;
+            height:100vh;
+            direction:rtl;
+            font-family: Shabnam;
+        }
+
+        .navbar{
+            background-color:silver;
+            color:white;
+            height:70px;
+            padding:0 15px 0 15px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .navbar img{
+            height: 100px;
+            width:100px;
+        }
+
+        .navitems{
+            display: flex;
+            justify-content:space-between;
+        }
+        .navitems a{
+            text-decoration:none;
+            font-size:16pt;
+            color:white;
+            margin:0px 20px 0px 20px ;
+        }
+
+        .main{
+            display:flex;
+            flex-direction:row;
+        }
+
+        .right-side{
+            padding:10px;
+            width:100%;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border:1px silver solid;
+        }
+
+        .right-side table{
+            text-align: center;
+            margin-top:5px;
+            font-size:16pt;
+            border-collapse: collapse
+        }  
+        
+        .right-side table tr:nth-child(even){
+            background-color:silver; 
+        }
+
+        .right-side .form{
+            display: flex;
+            flex-direction: column ;
+            margin-bottom: 40px;
+        }
+
+        .right-side input{
+            padding:5px;
+            margin-bottom:10px;
+            font-size:16pt;
+            border-radius:5px; 
+            outline: 0;
+        }
+
+        .right-side button{
+            cursor: pointer;
+            font-size:16pt;
+            padding:5px;
+            background-color: lime;
+            color:white;
+            border:0;
+            border-radius:5px; 
+            outline:0;
+
+        }
+
+        .left-side{
+            width:100%;
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            border:1px silver solid;
+        }
+
+        .left-side .buttons{
+            display: flex;
+            flex-direction:row;
+            justify-content:center;
+            margin-bottom:50px;
+            font-size: 13pt;
+            text-align:center;
+            color:white;
+        }
+
+        .left-side .buttons .green{
+            background-color:green;
+            width:100px ;
+            height:100px;
+            margin-right:5px;
+        }
+
+        .left-side .buttons .red{
+            background-color:red;
+            width:100px ;
+            height:100px;
+            margin-right:5px;
+        }
+
+        .left-side .buttons .blue{
+            background-color:blue;
+            width:100px ;
+            height:100px;
+            margin-right:5px;
+        }
+
+        .left-side .buttons .yellow{
+            background-color:yellow;
+            width:100px ;
+            height:100px;
+            margin-right:5px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <nav class="navbar">
+        <img src="logo.png">
+        <div class="navitems">
+            <a href="#">خانه</a>
+            <a href="#">فروشگاه</a>
+            <a href="#">قیمت ها</a>
+            <a href="#">درباره ما</a>
+        </div>
+        <i class="fa fa-bars" style="font-size:16pt;"></i>
+    </nav>
+    <div class="main">
+        <div class="right-side">
+            <table>
+                <tr>
+                  <th>نام</th>
+                  <th>نام خانوادگی</th>
+                  <th>تاریخ تولد</th>
+                </tr>
+                <tr>
+                  <td>امیرحسین</td>
+                  <td>محمدپور</td>
+                  <td>1375</td>
+                </tr>
+                <tr>
+                    <td>امیرحسین</td>
+                    <td>محمدپور</td>
+                    <td>1375</td>
+                </tr>
+                <tr>
+                    <td>امیرحسین</td>
+                    <td>محمدپور</td>
+                    <td>1375</td>
+                </tr>
+                <tr>
+                    <td>امیرحسین</td>
+                    <td>محمدپور</td>
+                    <td>1375</td>
+                </tr>
+            </table>
+            <div class="form">
+                <input type="text">
+                <input type="text">
+                <button>ارسال</button>
+            </div>
+        </div>
+        <div class="left-side">
+            <img src="logo.png" style="margin-top:-70px;">
+            <div class="buttons">
+                <div class="yellow">yellow</div>
+                <div class="blue">blue</div>
+                <div class="red">red</div>
+                <div class="green">green</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
